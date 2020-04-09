@@ -1,1 +1,34 @@
-<p>home works!</p>
+<div class="jumbotron">
+    <h1>Welcome to <strong>GitHub Search</strong>!</h1>
+    <h5 appRedblack>simply search a repository or a user</h5>
+</div>
+<div class="row about">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+
+        <img class="img-fluid" src="{{tyProfile.avatar_url}}" alt="my avatar">
+        <span class="text-justify"></span>
+    </div>
+
+    <div class='body col-lg-8 col-md-8 col-sm-2 desc'>
+        <p>{{tyProfile.login}}</p>
+        <p>followers: {{tyProfile.followers}}</p>
+        <p>following: {{tyProfile.following}}</p>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div *ngFor="let tyRepos of tyRepos">
+
+            <div class="card-header">
+                <h4>{{tyRepos.name | shorten}} </h4>
+            </div>
+            <div class="card-body">
+                <p> {{tyRepos.description}}</p>
+                <p appRedblack>Language(s): {{tyRepos.language}}</p>
+                <button type="button" name="button" class="btn
+        btn-outline-warning"><a href='{{tyRepos.html_url}}'
+          target="_blank">View
+          on GitHub</a></button>
+            </div>
+        </div>
+    </div>
+</div>
