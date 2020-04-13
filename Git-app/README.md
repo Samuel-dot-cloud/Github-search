@@ -1,5 +1,5 @@
 # PROJECT NAME.
-The project is titled 'Github Search'.For the live site, please visit:https://samuel-dot-cloud.github.io/Quotes-app-angular/ :point_left::point_left: :point_left:
+The project is titled 'Github Search'.For the live site, please visit:https://samuel-dot-cloud.github.io/Github-search/ :point_left::point_left: :point_left:
 
 ## PROJECT DESCRIPTION.
 The project is basically an angular application whereby a user has the ability to search for any github user.The site also provides the public repositories that the person has.:ok_hand::ok_hand:
