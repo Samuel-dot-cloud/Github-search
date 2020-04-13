@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {GithubRequestService} from '../github-http/github-request.service';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +14,7 @@ repos: any;
 username: any;
 
   // tslint:disable-next-line:variable-name
-  constructor(private _GithubRequestService: GithubRequestService) {
+  constructor(private _GithubRequestService: GithubRequestService, private spinner: NgxSpinnerService) {
 
 
    }
@@ -37,8 +37,15 @@ this._GithubRequestService.getRepos().subscribe(Repos => {
 
 
   ngOnInit() {
+  /** spinner starts on init */
+  this.spinner.show();
 
+  setTimeout(() => {
+    /** spinner ends after 5 seconds */
+    this.spinner.hide();
+  }, 5000);
+}
 
   }
 
-}
+

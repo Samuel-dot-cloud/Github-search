@@ -1,12 +1,12 @@
 <div class="container">
     <br>
-
+    <ngx-spinner></ngx-spinner>
     <div class="jumbotron jumbotron-fluid">
-        <div style="text-align: center;">
+        <div style="text-align: center;" id="title">
             <h2>Github Search Engine.</h2>
         </div>
         <hr>
-        <p>Feel free to access information on github users using this web application</p>
+        <p class="desc">Feel free to access information on github users using this web application.</p>
     </div>
 
     <form>
@@ -26,7 +26,7 @@
             <h3 id="userprofile">Github User Profile.</h3>
             <div *ngIf="user">
                 <div class="card" style="width: 18rem;" id="profile">
-                    <img class="img-thumbnail github-avatar" src="{{user.avatar_url}}" class=" card-img-top " alt="avatar url ">
+                    <img class="img-thumbnail github-avatar" src="{{user.avatar_url}}" class=" card-img-top" alt="avatar url ">
                     <div class="card-body ">
                         <h5 class="card-title " id="login">{{user.login}}</h5>
                         <p class="card-text "></p>
@@ -45,17 +45,17 @@
             <br>
             <div class="row ">
                 <div class="col-md-12">
-                    <div *ngFor="let repo of repos ">
-                        <div class=" card border-light mb-3 " id="repo ">
-                            <div class="card-header ">{{repo.name}}</div>
+                    <div *ngFor="let repo of repos">
+                        <div class="card border-light mb-3" id="repo">
+                            <div class="card-header" id="titletwo">{{repo.name}}</div>
                             <div class="card-body ">
-                                <h5 class="card-title ">Created at:{{repo.created_at|date}}</h5>
-                                <p class="card-text ">Number of forks:{{repo.forks}}</p>
-                                <p class="card-text ">Language:{{repo.language}}</p>
-                                <a href="{{repo.html_url}} " target="_blank " class="btn btn-danger ">Visit actual repository.</a>
+                                <h5 class="card-title" id="titleone">Created at:{{repo.created_at|date}}</h5>
+                                <p class="card-text " id="titlethree">Number of forks:{{repo.forks}}</p>
+                                <p class="card-text" id="titlefour">Language:{{repo.language}}</p>
+                                <a href="{{repo.html_url}}" target="_blank" class="btn btn-danger" id="titlefive">Visit actual repository.</a>
                             </div>
-                            <div class="card-footer text-muted ">
-                                Last updated at: {{repo.updated_at |date}}
+                            <div class="card-footer text-muted" id="titlesix">
+                                Last updated at:{{repo.updated_at |date}}
                             </div>
                             <br>
                             <hr>

@@ -3,3 +3,58 @@
     float: none;
     margin-bottom: 10px;
 }
+
+#title {
+    font-family: 'Trade Winds', cursive;
+}
+
+.desc {
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+}
+
+#userprofile {
+    font-family: 'Girassol', cursive;
+    font-size: 30px;
+}
+
+#userrepo {
+    font-family: 'Gotu', sans-serif;
+    font-size: 30px;
+}
+
+#titleone {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+#titletwo {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: gold;
+}
+
+#titlethree {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+#titlefour {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+#titlefive {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+#titlesix {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+#login {
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+}
