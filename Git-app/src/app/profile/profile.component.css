@@ -14,3 +14,32 @@ a:hover {
     width: auto;
     padding: 5%;
 }
+
+#about {
+    font-family: 'Cookie', cursive;
+    font-size: 50px;
+}
+
+.descone {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+}
+
+#contact {
+    font-family: 'Comic Neue', cursive;
+}
+
+#covid {
+    font-family: 'Girassol', cursive;
+    font-size: 25px;
+}
+
+#lone {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+details {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
