@@ -7,11 +7,14 @@ import {GithubRequestService} from '../github-http/github-request.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+user: any;
+
 
   // tslint:disable-next-line:variable-name
   constructor(private _GithubRequestService: GithubRequestService) {
-    this._GithubRequestService.getUser().subscribe(users => {
-      console.log(users);
+    this._GithubRequestService.getUser().subscribe(user => {
+      // console.log(users);
+      this.user = user;
     });
    }
 

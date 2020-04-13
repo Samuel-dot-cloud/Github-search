@@ -20,6 +20,6 @@ export class GithubRequestService {
 getUser() {
 return this.http.get('https://api.github.com/users/' + this.username);
 // tslint:disable-next-line:align
-     .map(res => res.json());
+    //  .map(res => res.json());
 }
 }
