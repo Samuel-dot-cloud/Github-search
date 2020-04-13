@@ -17,5 +17,9 @@ export class GithubRequestService {
     console.log('Github Component Init...');
   }
 
-
+getUser() {
+return this.http.get('https://api.github.com/users/' + this.username);
+// tslint:disable-next-line:align
+     .map(res => res.json());
+}
 }
