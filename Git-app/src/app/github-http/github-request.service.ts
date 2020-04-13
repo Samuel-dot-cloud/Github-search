@@ -28,4 +28,8 @@ getRepos() {
   // tslint:disable-next-line:align
       //  .map(res => res.json());
   }
+
+  updateUsername(username: string) {
+this.username = username;
+  }
 }
