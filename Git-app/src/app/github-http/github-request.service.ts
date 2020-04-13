@@ -22,4 +22,10 @@ return this.http.get('https://api.github.com/users/' + this.username);
 // tslint:disable-next-line:align
     //  .map(res => res.json());
 }
+
+getRepos() {
+  return this.http.get('https://api.github.com/users/' + this.username + '/repos');
+  // tslint:disable-next-line:align
+      //  .map(res => res.json());
+  }
 }

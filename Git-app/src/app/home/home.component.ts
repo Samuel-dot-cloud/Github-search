@@ -8,7 +8,7 @@ import {GithubRequestService} from '../github-http/github-request.service';
 })
 export class HomeComponent implements OnInit {
 user: any;
-
+repos: any;
 
   // tslint:disable-next-line:variable-name
   constructor(private _GithubRequestService: GithubRequestService) {
@@ -16,6 +16,12 @@ user: any;
       // console.log(users);
       this.user = user;
     });
+
+    this._GithubRequestService.getRepos().subscribe(Repos => {
+      // console.log(users);
+      this.repos = Repos;
+    });
+
    }
 
   ngOnInit() {
