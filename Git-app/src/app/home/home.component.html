@@ -1,6 +1,6 @@
 <div class="container">
     <br>
-    <app-navbar></app-navbar>
+
     <div class="jumbotron jumbotron-fluid">
         <div style="text-align: center;">
             <h2>Github Search Engine.</h2>
@@ -46,12 +46,13 @@
             <div class="row ">
                 <div class="col-md-12">
                     <div *ngFor="let repo of repos ">
-                        <div class=" card border-light mb-3 " style="max-width: 18rem; " id="repo ">
+                        <div class=" card border-light mb-3 " id="repo ">
                             <div class="card-header ">{{repo.name}}</div>
                             <div class="card-body ">
                                 <h5 class="card-title ">Created at:{{repo.created_at|date}}</h5>
                                 <p class="card-text ">Number of forks:{{repo.forks}}</p>
-                                <a href="{{repo.html_url}} " target="_blank" class="btn btn-danger ">Visit actual repository.</a>
+                                <p class="card-text ">Language:{{repo.language}}</p>
+                                <a href="{{repo.html_url}} " target="_blank " class="btn btn-danger ">Visit actual repository.</a>
                             </div>
                             <div class="card-footer text-muted ">
                                 Last updated at: {{repo.updated_at |date}}
