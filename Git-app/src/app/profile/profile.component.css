@@ -43,3 +43,9 @@ details {
     font-family: 'Great Vibes', cursive;
     font-size: 25px;
 }
+
+.container {
+    background-color: crimson;
+    opacity: 0.6;
+    background-attachment: fixed;
+}
