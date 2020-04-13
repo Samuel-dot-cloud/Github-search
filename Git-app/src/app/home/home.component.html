@@ -35,7 +35,7 @@
                 <p class="card-text " id="follower">Followers:{{user.followers}} </p>
                 <p class="card-text " id="following">Following:{{user.following}} </p>
                 <p class="card-text " id="reposa">Public Repositories:{{user.public_repos}} </p>
-                <a href="{{user.html_url}}" target="_blank" class="btn btn-warning ">View profile.</a>
+                <a href="{{user.html_url}}" target="_blank" class="btn btn-warning">View profile.</a>
             </div>
         </div>
     </div>
@@ -46,8 +46,8 @@
     <div class="container">
         <h4 id="userrepo">Public Repositories.</h4>
         <br>
-        <div class="row ">
-            <div class="col-mb-12">
+        <div class="row">
+            <div class="col-mb-4">
                 <div *ngFor="let repo of repos">
                     <div class="card-deck">
                         <div class="card border-light mb-3" id="repo">
@@ -59,10 +59,10 @@
                                 <a href="{{repo.html_url}}" target="_blank" class="btn btn-danger" id="titlefive">Visit actual repository.</a>
                             </div>
                             <div class="card-footer text-muted" id="titlesix">
-                                Last updated at:{{repo.updated_at |date}}
+                                Last updated at:{{repo.updated_at|date}}
                             </div>
-                            <br>
-                            <hr>
+                            <br><br>
+
                         </div>
                     </div>
                 </div>
