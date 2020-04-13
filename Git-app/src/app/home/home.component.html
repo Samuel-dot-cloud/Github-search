@@ -18,9 +18,9 @@
             <!-- <div class="mb-3">
             <label for="validationTextarea">Textarea</label>
             <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea> -->
-            <div class="col-auto">
+            <!-- <div class="col-auto">
                 <button type="submit" class="btn btn-primary mb-2">Search</button>
-            </div>
+            </div> -->
             <br>
             <hr>
             <h3 id="userprofile">Github User Profile.</h3>
@@ -49,13 +49,15 @@
                         <div class=" card border-light mb-3 " style="max-width: 18rem; " id="repo ">
                             <div class="card-header ">{{repo.name}}</div>
                             <div class="card-body ">
-                                <h5 class="card-title ">Light card title</h5>
+                                <h5 class="card-title ">Created at:{{repo.created_at|date}}</h5>
                                 <p class="card-text ">Number of forks:{{repo.forks}}</p>
                                 <a href="{{repo.html_url}} " target="_blank" class="btn btn-danger ">Visit actual repository.</a>
                             </div>
                             <div class="card-footer text-muted ">
-                                2 days ago
+                                Last updated at: {{repo.updated_at |date}}
                             </div>
+                            <br>
+                            <hr>
                         </div>
                     </div>
                 </div>
