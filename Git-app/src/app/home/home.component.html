@@ -5,7 +5,7 @@
     </ngx-spinner>
     <div class="jumbotron jumbotron-fluid">
         <div style="text-align: center;" id="title">
-            <h2>Github Search Engine.</h2>
+            <h2 appHighlight>Github Search Engine.</h2>
         </div>
         <hr>
         <p class="desc">Feel free to access information on github users using this web application.</p>
@@ -27,14 +27,16 @@
             <hr>
             <h3 id="userprofile">Github User Profile.</h3>
             <div *ngIf="user">
-                <div class="card" style="width: 18rem;" id="profile">
-                    <img class="img-thumbnail github-avatar" src="{{user.avatar_url}}" class=" card-img-top" alt="avatar url ">
-                    <div class="card-body ">
-                        <h5 class="card-title " id="login">{{user.login}}</h5>
-                        <p class="card-text " id="follower">Followers:{{user.followers}} </p>
-                        <p class="card-text " id="following">Following:{{user.following}} </p>
-                        <p class="card-text " id="reposa">Public Repositories:{{user.public_repos}} </p>
-                        <a href="{{user.html_url}}" target="_blank" class="btn btn-warning ">View profile.</a>
+                <div class="card-deck">
+                    <div class="card" style="width: 18rem;" id="profile">
+                        <img class="img-thumbnail github-avatar" src="{{user.avatar_url}}" class=" card-img-top" alt="avatar url ">
+                        <div class="card-body ">
+                            <h5 class="card-title " id="login">{{user.login}}</h5>
+                            <p class="card-text " id="follower">Followers:{{user.followers}} </p>
+                            <p class="card-text " id="following">Following:{{user.following}} </p>
+                            <p class="card-text " id="reposa">Public Repositories:{{user.public_repos}} </p>
+                            <a href="{{user.html_url}}" target="_blank" class="btn btn-warning ">View profile.</a>
+                        </div>
                     </div>
                 </div>
             </div>

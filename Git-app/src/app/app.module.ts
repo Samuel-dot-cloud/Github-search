@@ -10,6 +10,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HighlightDirective } from './highlight.directive';
+import { TimePipe } from './time.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SearchBarComponent,
     NavbarComponent,
-    ProfileComponent
+    ProfileComponent,
+    HighlightDirective,
+    TimePipe
   ],
   imports: [
     BrowserModule,

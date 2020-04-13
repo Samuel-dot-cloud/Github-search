@@ -73,3 +73,7 @@
     font-family: 'Gotu', sans-serif;
     font-size: 20px;
 }
+
+.card-deck {
+    display: flex;
+}
