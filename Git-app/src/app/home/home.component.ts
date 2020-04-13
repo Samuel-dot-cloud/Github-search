@@ -8,7 +8,8 @@ import {GithubRequestService} from '../github-http/github-request.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  // tslint:disable-next-line:variable-name
+  constructor(private _GithubRequestService: GithubRequestService) { }
 
   ngOnInit() {
   }

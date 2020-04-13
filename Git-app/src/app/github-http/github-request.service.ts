@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {environment} from './../../environments/environment';
-import 'rxjs/add/operator/map';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +13,9 @@ export class GithubRequestService {
   // tslint:disable-next-line:variable-name
   private client_secret = '8a5d35ec1b009f3f44fc3c08ef4310f58a5c7280';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    console.log('Github Component Init...');
+  }
 
 
 }
