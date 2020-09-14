@@ -43,7 +43,7 @@ Input in search bar.|Type in username.|Displays profile and repository as one ty
 The project makes use of HTML, CSS, and typescript, which is a superset of JavaScript.
 
 ## CONTACT INFORMATION.
-For more information, please contact me through e-mail by samdot@gmail.com or on any other social media site by the same user name.
+For more information, please contact me through e-mail by samuelwahome.k5@gmail.com .
 
 ## LICENSE AND COPYRIGHT INFORMATION.
 Copyright(c) 2020-present
